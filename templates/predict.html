@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linear Regression Model Prediction</title>
+</head>
+<body>
+    <h1>Linear Regression Model Prediction</h1>
+    
+    <form method="post" action="/predict">
+        <!-- age input -->
+        <label for="age">Age:</label>
+        <input type="number" name="age" required><br><br>
+    
+        <!-- sex input -->
+        <label for="sex">Sex:</label>
+        <select name="sex" required>
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select><br><br>
+    
+        <!-- bmi input -->
+        <label for="bmi">BMI:</label>
+        <input type="number" step="0.01" name="bmi" required><br><br>
+    
+        <!-- children input -->
+        <label for="children">Children:</label>
+        <input type="number" name="children" required><br><br>
+    
+        <!-- smoker input -->
+        <label for="smoker">Smoker:</label>
+        <select name="smoker" required>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+    
+        <!-- region input -->
+        <label for="region">Region:</label>
+        <select name="region" required>
+            <option>Southwest</option>
+            <option>Southeast</option>
+            <option>Northwest</option>
+            <option>Northeast</option>
+        </select><br><br>
+    
+        <input type="submit" value="Predict">
+
+        
+    </form>
+    
